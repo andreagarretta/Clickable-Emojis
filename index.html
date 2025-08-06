@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Emojis Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <button id="emoji-btn" title="Pick an emoji">😊</button>
+            <emoji-picker id="emoji-picker" style="display:none;"></emoji-picker>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-btn" title="Send">
+                <svg id="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M3.4 20.29l17.45-7.48c.78-.33.78-1.42 0-1.75L3.4 3.58c-.7-.3-1.41.41-1.11 1.11l3.13 7.01c.13.29.13.62 0 .91l-3.13 7.01c-.3.7.41 1.41 1.11 1.11z" fill="#fff"/></svg>
+            </button>
+        </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
